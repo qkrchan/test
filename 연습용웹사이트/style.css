@@ -1,0 +1,30 @@
+#title{
+    font-size: 60px;
+    border-bottom: 1px solid; 
+    text-align: center; 
+    padding : 20px;
+    margin: 0;
+}
+
+
+#list{
+    font-size: 40px;
+    border-right: 1px solid;
+    width: 250px;
+    margin: 0;
+    padding-top: 15px;
+}
+#grid{
+    display: grid;
+    grid-template-columns : 150px 1fr;
+}
+p{
+    font-size: 25px;
+    padding-left: 200px;
+    margin: 0;
+    padding-top: 15px;
+}
+.s_list{
+    color : rgb(72, 36, 170);
+    text-decoration: none;
+}
