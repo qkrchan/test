@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="가위바위보">
+    <meta name="Keywords" content="게임 실습"> 
+    <title>게임</title>
+    <link rel="stylesheet" href="css/playgame.css">
+</head>
+<body>
+    
+  <form name="game">
+      <table border=3 cellpadding=5>
+        <tr> 
+          <th>선택하세요:</th>
+          <td><img src="img/rock.png" onClick="playGame(1)"></td>
+          <td><img src="img/paper.png" onClick="playGame(2)"></td>
+          <td><img src="img/scissors.png" onClick="playGame(3)"></td>
+        </tr>
+        <tr> 
+          <td colspan="4">  
+            <input type="text" id="msg" size="60" placeholder="즐겜">  <!-- 게임 결과 메시지 출력 -->
+          </td>
+        </tr>
+        <tr> 
+          <td colspan=4> 
+            <input type="text" class="WLD" name="win" readonly value="0" size="2">
+            번 이김. 
+            <input type="text" class="WLD" name="loss" readonly value="0" size="2">
+            번 짐. 
+            <input type="text" class="WLD" name="draw" readonly value="0" size="2">
+            번 무승부.
+          </td>
+        </tr>
+      </table>
+  </form>
+        
+
+  <table cellspacing="2" cellpadding="2">
+    <tr> 
+      <td id="tab_td" valign="middle">  
+        ** 게임 설명 **  
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="cornsilk">
+        1. 가위 바위 보 게임입니다.
+        <br>
+        2. 그림을 선택하면 게임이 진행되고 결과가 나옵니다.
+        <br>
+        3. 계속 그림을 선택하면 게임이 계속 됩니다.     
+      </td>
+    </tr>
+  </table>
+
+  <script src="js/playgame.js"></script>
+    
+</body>
+</html>
