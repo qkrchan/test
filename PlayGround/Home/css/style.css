@@ -1,0 +1,80 @@
+
+
+
+.hidden{
+  display: none;
+}
+
+#background-img{
+  width: 100vw;
+  height:100vh;
+  position: absolute;
+  top: 0;
+  left: 0;   
+  z-index: -1;
+}
+
+body{
+  color: white;
+}
+
+#nav{
+  opacity: 0.7;
+}
+
+#weather{
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+}
+#weather img{
+  width: 5vw;
+}
+
+input{
+  all: unset;
+  border: 2px solid white;
+  border-radius: 8px;    
+}
+input::placeholder{
+  color: white;
+}
+input:hover{
+  transition: 0.5s;
+  border-color: palevioletred;
+  transform: perspective(100px) translateZ(5px);
+}
+#login-text{
+  width: 200px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+#login-btn{
+  width: 90px;
+  height: 50px;  
+}
+#todo-text{
+  width: 300px;
+  height: 50px;
+}
+
+#clock{
+  font-size: 6rem;
+  margin-bottom: 30px;
+}
+
+#greeting{
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+#todo-list span{
+  font-size: 2rem;
+}
+
+#quote{
+  width: 100vw;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+}
